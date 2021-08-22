@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="News"
+            type="com.greenmug.newspressplay.models.News" />
+
+    </data>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_8sdp"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardElevation="@dimen/_3sdp"
+    app:cardCornerRadius="@dimen/_8sdp">
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_8sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/bookmark"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:src="@drawable/ic_baseline_bookmark_add_24"
+            android:padding="@dimen/_3sdp"
+            android:tint="@color/exo_gray"
+            android:layout_marginTop="@dimen/_2sdp"
+            />
+
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_label"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold"
+            android:text="@{News.name}"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/imagePoster"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:riv_corner_radius="@dimen/_8sdp"
+            android:imageURL="@{News.image}"
+            app:layout_constraintTop_toBottomOf="@id/textName"
+            android:layout_height="@dimen/_100sdp">
+        </com.makeramen.roundedimageview.RoundedImageView>
+
+
+        <TextView
+            android:id="@+id/textRacing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_label"
+            android:textSize="@dimen/_8ssp"
+            android:maxLength="@integer/material_motion_duration_medium_2"
+            android:text="Auto racing is a motorsport involving the racing of automobiles for competition"
+            app:layout_constraintTop_toBottomOf="@id/imagePoster"
+            android:layout_marginTop="@dimen/_2sdp"/>
+
+
+        <ImageView
+            android:id="@+id/videoType"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@id/textRacing"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:src="@drawable/ic_video"/>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/favourite"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            app:layout_constraintTop_toBottomOf="@id/textRacing"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_favorite"
+            android:padding="@dimen/_5sdp"
+            android:tint="@color/favorite_background"
+            android:layout_marginTop="@dimen/_2sdp"
+     />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+</layout>

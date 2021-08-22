@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/trending"
+        android:icon="@drawable/ic_trend"
+        android:title="Trend">
+    </item>
+
+    <item android:id="@+id/favourite"
+        android:icon="@drawable/ic_video"
+        android:title="Channels">
+    </item>
+
+    <item android:id="@+id/later"
+        android:icon="@drawable/ic_watch_later"
+        android:title="Watch Later">
+    </item>
+</menu>

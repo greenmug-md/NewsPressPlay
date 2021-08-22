@@ -1,0 +1,93 @@
+package com.greenmug.newspressplay.viewModels
+
+import android.util.Log
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import com.google.firebase.firestore.FirebaseFirestore
+import com.greenmug.newspressplay.models.Channels
+import com.greenmug.newspressplay.models.EdgeNetCloud
+import com.greenmug.newspressplay.models.News
+import com.greenmug.newspressplay.network.Resource
+import com.greenmug.newspressplay.repositories.EdgeNetRepository
+import com.greenmug.newspressplay.utilities.Constants
+import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.launch
+import javax.inject.Inject
+
+@HiltViewModel
+class ChannelViewModel  @Inject constructor(
+    private val edgeNetRepository: EdgeNetRepository
+): ViewModel() {
+
+    private val _home = MutableLiveData<Resource<EdgeNetCloud?>>()
+    val home: LiveData<Resource<EdgeNetCloud?>> = _home
+    var list = MutableLiveData<ArrayList<News>>()
+    var channels = MutableLiveData<ArrayList<Channels>>()
+    fun  getContent()   {
+            viewModelScope.launch {
+                var l = ArrayList<News>();
+                val database: FirebaseFirestore = FirebaseFirestore.getInstance()
+                database.collection(Constants.KEY_COLLECTION_VIDEOS)
+                    .whereEqualTo(Constants.KEY_CHANNEL, Constants.CHANNEL_0)
+                    .get()
+                    .addOnCompleteListener { task ->
+                        if (task.isSuccessful() && task.getResult() != null && task?.getResult()
+                                ?.getDocuments() != null && task!!.getResult()!!
+                                .getDocuments()!!.size > 0
+                        ) {
+                            for (m in task?.getResult()!!.getDocuments()) {
+                                var content_id = m.getString("content_id")
+                                var name = m.getString("name")
+                                var url = m.getString("url")
+                                var image = m.getString("image")
+                                var s = News(name = name!!, image = image!!, url = url!!, content_id = content_id!!);
+                                l.add(s);
+                            }
+                            list.postValue(l)
+                        } else {
+
+                        }
+                    }
+                    .addOnFailureListener {
+
+                    }
+
+            }
+
+    }
+
+    fun  getChannels()   {
+        viewModelScope.launch {
+            var ch = ArrayList<Channels>();
+            val database: FirebaseFirestore = FirebaseFirestore.getInstance()
+            database.collection(Constants.KEY_COLLECTION_CHANNELS)
+                .get()
+                .addOnCompleteListener { task ->
+                    if (task.isSuccessful() && task.getResult() != null && task?.getResult()
+                            ?.getDocuments() != null && task!!.getResult()!!
+                            .getDocuments()!!.size > 0
+                    ) {
+                        for (m in task?.getResult()!!.getDocuments()) {
+                            var content = m.getString("content")
+                            var url = m.getString("url")
+                            var name = m.getString("name")
+                            var channel = m.getString("channel")
+                            var s = Channels(name = name!!,url = url!!,content = content!!,channel = channel!!);
+                            ch.add(s);
+                        }
+                        channels.postValue(ch)
+                        Log.d("Malathi", "I am here ")
+                    } else {
+
+                    }
+                }
+                .addOnFailureListener {
+                    Log.d("Malathi", "Genre = ")
+                }
+
+        }
+
+    }
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/background_slider_indicator_inactive.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/backgroud_subscribe.xml" value="0.21041666666666667" />
+        <entry key="app/src/main/res/drawable/background_favourite.xml" value="0.21041666666666667" />
+        <entry key="app/src/main/res/drawable/ic_bookmark.xml" value="0.21041666666666667" />
+        <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.10625" />
+        <entry key="app/src/main/res/drawable/ic_favorite.xml" value="0.21041666666666667" />
+        <entry key="app/src/main/res/drawable/ic_favorite_border.xml" value="0.21041666666666667" />
+        <entry key="app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.10625" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.10625" />
+        <entry key="app/src/main/res/drawable/ic_news.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.10625" />
+        <entry key="app/src/main/res/drawable/ic_subscribe.xml" value="0.10625" />
+        <entry key="app/src/main/res/drawable/ic_subscribe_added.xml" value="0.10625" />
+        <entry key="app/src/main/res/drawable/ic_video.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_watch_later.xml" value="0.10625" />
+        <entry key="app/src/main/res/layout/activity_all_videos.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_maps.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_player.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_search.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.12604166666666666" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_tv_show_details.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_watch_list.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/channel_activity.xml" value="0.16485507246376813" />
+        <entry key="app/src/main/res/layout/content_splash.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/exo_playback_control_view.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/favourite_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_first2.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_second.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_container_channel.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_container_episode.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_container_news_vertical.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_container_slider_image.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_container_tv_show.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_container_view.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/item_container_watchlater.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/splash_screen.xml" value="0.13858695652173914" />
+        <entry key="app/src/main/res/layout/trend_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/watch_later_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/bottom_navigation.xml" value="0.12407407407407407" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

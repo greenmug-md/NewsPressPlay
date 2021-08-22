@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1062510063107",
+    "project_id": "newsfeedpress",
+    "storage_bucket": "newsfeedpress.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1062510063107:android:e3b34f492a636789ec6836",
+        "android_client_info": {
+          "package_name": "com.greenmug.newspressplay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1062510063107-pt92u26vu7e9e59ooaiqi2q4t6v4nbo7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.greenmug.newspressplay",
+            "certificate_hash": "1f80e0034086126ea9665d6bf56376105dd7ab6b"
+          }
+        },
+        {
+          "client_id": "1062510063107-964ebareu8ruc24vfl0v230v4tahb88s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEDKQi7xtPEt6HRYxB1vRFdcDcsPC4mRY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1062510063107-964ebareu8ruc24vfl0v230v4tahb88s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="isLoading"
+            type="Boolean" />
+
+        <variable
+            name="isLoadingMore"
+            type="Boolean" />
+
+        <import type="android.view.View"/>
+    </data>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".activity.SplashActivity">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lotto"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/broadcast1" />
+
+
+    <TextView
+        android:id="@+id/press"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lotto"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="News Press Play"
+        android:textColor="@color/exo_black_opacity_70"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/press1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/press"
+        android:gravity="center"
+        android:fontFamily="@font/ubuntu_regular"
+        android:text="World News At Your FingerTips"
+        android:textColor="@color/exo_black_opacity_70"
+        android:textSize="10dp" />
+
+</RelativeLayout>
+</layout>
