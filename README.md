@@ -138,6 +138,10 @@ Api Key and Partner Id, has been encrypted using AES Encryption.
 
 <img width="800" alt="Screenshot 2021-08-23 at 11 41 54 AM" src="https://user-images.githubusercontent.com/34758872/130398983-4c4457ed-d21e-498b-8ca8-c18682a28b0a.png">
 
+# Images in App
+
+Images in App are free Images from https://unsplash.com/ . 
+and Lottie File in Splash Screen is https://lottiefiles.com/9295-full-movie-experience-including-music-news-video-weather-and-lots-of-entertainment
 
 
 
