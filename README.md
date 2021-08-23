@@ -45,6 +45,11 @@ User can Search for Video
 
 User can  Favourite Video by clicking on Pink Favourite Icon  and can Bookamrk using the Bookmark icon on the far top left corner.
 Once favourited or Bookmarked, It goes to the Watch Later Section.
+
+Its a Slider View Pager 
+
+![Screenshot_20210823-141006](https://user-images.githubusercontent.com/34758872/130417780-ee5ec9c4-5d4a-4d12-a376-93bf29894c75.png)
+
     
 <img src="https://user-images.githubusercontent.com/34758872/130397281-e7ebebc8-1268-4a15-9880-078c07134d48.png" width="200">
   
@@ -108,7 +113,7 @@ Google Service JSON file already provided in App. You can use the same to run th
 
 <img width="800" alt="Screenshot 2021-08-23 at 12 53 50 PM" src="https://user-images.githubusercontent.com/34758872/130407041-0ff4e7fd-33f2-40aa-a448-e231b71689dc.png">
 
-Partner ID and Api Key from Edge Net provided for App. You can use the same to run the app.
+Partner ID and Api Key from Edge Net provided for App in Constants class. You can use the same to run the app.
 
 Open android Studio, Build and Run on Android Device , Android Device should be Wifi or Network Enabled.
 
