@@ -1,6 +1,5 @@
 package com.greenmug.newspressplay.viewmodels
 
-import android.util.Log
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.greenmug.newspressplay.viewModels.ChannelViewModel
 import kotlinx.coroutines.delay
@@ -9,6 +8,9 @@ import org.junit.Assert
 import org.junit.Rule
 import org.junit.Test
 
+/*
+Tests for Channel Video Model
+ */
 class ChannelViewModelTest {
 
     @get:Rule

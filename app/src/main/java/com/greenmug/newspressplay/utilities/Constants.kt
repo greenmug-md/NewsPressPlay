@@ -1,5 +1,6 @@
 package com.greenmug.newspressplay.utilities
 
+//Constants
 object Constants {
     // Firebase
     const val KEY_COLLECTION_USERS = "users"

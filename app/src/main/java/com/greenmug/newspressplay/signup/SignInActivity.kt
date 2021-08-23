@@ -16,7 +16,9 @@ import com.greenmug.newspressplay.activity.HomeActivity
 import com.greenmug.newspressplay.utilities.Constants
 import com.greenmug.newspressplay.utilities.PreferenceManager
 
-
+/*
+Activity for SignIn
+ */
 class SignInActivity : AppCompatActivity() {
     private var inputEmail: EditText? = null
     private var inputPassword: EditText? = null

@@ -1,32 +1,24 @@
 package com.greenmug.newspressplay.signup
 
-import android.os.Bundle
-
-import androidx.appcompat.app.AppCompatActivity
-
-import com.greenmug.newspressplay.R
-
-import android.widget.EditText
-
-import android.widget.Toast
 
 import android.content.Intent
-
-import com.google.firebase.firestore.FirebaseFirestore
-
+import android.os.Bundle
 import android.util.Patterns
-
-
 import android.view.View
-
+import android.widget.EditText
 import android.widget.ProgressBar
-
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.button.MaterialButton
+import com.google.firebase.firestore.FirebaseFirestore
+import com.greenmug.newspressplay.R
 import com.greenmug.newspressplay.activity.HomeActivity
 import com.greenmug.newspressplay.utilities.Constants
 import com.greenmug.newspressplay.utilities.PreferenceManager
 
-
+/*
+Activity for Sign Up
+ */
 class SignUpActivity : AppCompatActivity() {
     private var inputFirstName: EditText? = null
     private var inputLastName: EditText? = null

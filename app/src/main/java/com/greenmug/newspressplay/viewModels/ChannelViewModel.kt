@@ -1,21 +1,17 @@
 package com.greenmug.newspressplay.viewModels
 
-import android.util.Log
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.google.firebase.firestore.FirebaseFirestore
 import com.greenmug.newspressplay.models.Channels
-import com.greenmug.newspressplay.models.EdgeNetCloud
 import com.greenmug.newspressplay.models.News
-import com.greenmug.newspressplay.network.Resource
-import com.greenmug.newspressplay.repositories.EdgeNetRepository
 import com.greenmug.newspressplay.utilities.Constants
-import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
-import javax.inject.Inject
 
+/*
+ViewModel for Channels
+ */
 class ChannelViewModel  (): ViewModel() {
     var list = MutableLiveData<ArrayList<News>>()
     var channels = MutableLiveData<ArrayList<Channels>>()
@@ -73,13 +69,11 @@ class ChannelViewModel  (): ViewModel() {
                             ch.add(s);
                         }
                         channels.postValue(ch)
-                        Log.d("Malathi", "I am here ")
                     } else {
 
                     }
                 }
                 .addOnFailureListener {
-                    Log.d("Malathi", "Genre = ")
                 }
 
         }

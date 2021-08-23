@@ -1,10 +1,12 @@
 package com.greenmug.newspressplay.models
 
 import androidx.room.Entity
-import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
+/*
+Data class for Favourites
+ */
 @Entity(tableName = "favourites", primaryKeys = ["content_id","type"])
 data class Favourites(
     @SerializedName("name") var name: String,

@@ -2,7 +2,9 @@ package com.greenmug.newspressplay.models
 
 
 import com.google.gson.annotations.SerializedName
-
+/*
+Data class for EdgeNetCloudItem
+ */
 data class EdgeNetCloudItem(
     @SerializedName("content_access")
     val contentAccess: String,

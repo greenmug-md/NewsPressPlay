@@ -1,13 +1,11 @@
 package com.greenmug.newspressplay.viewModels
 
 import android.app.Application
-import android.util.Log
-import androidx.lifecycle.*
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.viewModelScope
 import com.google.firebase.firestore.FirebaseFirestore
 import com.greenmug.newspressplay.database.FavouriteShowDatabase
-import com.greenmug.newspressplay.listeners.SaveLaterListener
-import com.greenmug.newspressplay.models.Channels
-import com.greenmug.newspressplay.models.Favourites
 import com.greenmug.newspressplay.models.News
 import com.greenmug.newspressplay.repositories.EdgeNetRepository
 import com.greenmug.newspressplay.utilities.Constants
@@ -15,6 +13,9 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+/*
+ViewModel for Search View Model
+ */
 @HiltViewModel
 class SearchViewModel@Inject constructor(application: Application,  val edgeNetRepository: EdgeNetRepository) : AndroidViewModel(application) {
     var favouriteShowDatabase: FavouriteShowDatabase?=null
@@ -61,19 +62,7 @@ class SearchViewModel@Inject constructor(application: Application,  val edgeNetR
         }
 
     }
-    fun  startPlayer(url:String, content_id : String) {
-        try {
-            viewModelScope.launch {
-                var edgeNet = edgeNetRepository?.getAllContentId(content_id)
-                if (edgeNet != null && edgeNet?.body() != null && edgeNet?.isSuccessful && edgeNet?.body()?.url != null) {
-                    edgeNetUrl.postValue(edgeNet?.body()?.url!!)
-                } else {
-                    edgeNetUrl.postValue(url);
-                }
-            }
-        } catch (e: Exception) {
-        }
-    }
+
 
 
 }

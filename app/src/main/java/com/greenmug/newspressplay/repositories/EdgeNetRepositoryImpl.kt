@@ -1,14 +1,13 @@
 package com.greenmug.newspressplay.repositories
 
-import android.util.Log
-import androidx.lifecycle.LiveData
 import com.greenmug.newspressplay.models.EdgeNetCloud
-import com.greenmug.newspressplay.models.EdgeNetCloudItem
 import com.greenmug.newspressplay.models.EdgeNetUrl
 import com.greenmug.newspressplay.network.ApiEdgeNetService
-
 import retrofit2.Response
 
+/*
+Implementation for EdgeNetRepository
+ */
 class EdgeNetRepositoryImpl(private val apiEdgeNet: ApiEdgeNetService) :  EdgeNetRepository  {
 
     override suspend fun getAllContent(): Response<EdgeNetCloud> {

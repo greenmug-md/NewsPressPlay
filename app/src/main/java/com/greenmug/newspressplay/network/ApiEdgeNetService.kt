@@ -1,13 +1,18 @@
 package com.greenmug.newspressplay.network
 
 import com.greenmug.newspressplay.models.EdgeNetCloud
-import com.greenmug.newspressplay.models.EdgeNetCloudItem
 import com.greenmug.newspressplay.models.EdgeNetUrl
 import com.greenmug.newspressplay.utilities.AESEncyption
 import com.greenmug.newspressplay.utilities.Constants
-import retrofit2.http.*
 import retrofit2.Response
+import retrofit2.http.GET
+import retrofit2.http.Header
+import retrofit2.http.Path
+import retrofit2.http.Query
 
+/*
+Retrofit ApiEdgeNetService Service
+ */
 interface ApiEdgeNetService {
 
     @GET("api/v1/stream-tech/content/get-all")

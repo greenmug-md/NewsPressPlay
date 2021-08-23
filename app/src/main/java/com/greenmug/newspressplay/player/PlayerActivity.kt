@@ -68,8 +68,6 @@ class PlayerActivity : AppCompatActivity() {
         playerView = findViewById(R.id.playerView)
         var url = intent.getStringExtra("videoUrl")
         var edgeNetUrl = intent.getStringExtra("edgeNetUrl")
-        Log.d("Malathi EdgeNet)u"," "+edgeNetUrl)
-        Log.d("Malathi url"," "+url)
         videoUrl =  if(EDNET_URL) edgeNetUrl else url
         duration = intent.getIntExtra("showTime",0)
     }

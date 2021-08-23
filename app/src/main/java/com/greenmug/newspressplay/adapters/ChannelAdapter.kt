@@ -1,20 +1,14 @@
 package com.greenmug.newspressplay.adapters
 
 import android.content.Context
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.greenmug.newspressplay.R
-import com.greenmug.newspressplay.activity.ChannelsActivity
 import com.greenmug.newspressplay.databinding.ItemContainerChannelBinding
-import com.greenmug.newspressplay.databinding.ItemContainerViewBinding
 import com.greenmug.newspressplay.listeners.ChannelListener
-import com.greenmug.newspressplay.listeners.PlayerListener
 import com.greenmug.newspressplay.models.Channels
-import com.greenmug.newspressplay.models.News
-import com.greenmug.newspressplay.player.PlayerActivity
 
 /*
     Adapter for all Channels

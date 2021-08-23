@@ -1,28 +1,22 @@
 package com.greenmug.newspressplay.database
 
 import android.content.Context
-import android.util.Log
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import androidx.lifecycle.asFlow
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
-import androidx.test.espresso.matcher.ViewMatchers.assertThat
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.greenmug.newspressplay.dao.FavouriteShowDao
 import com.greenmug.newspressplay.models.Favourites
-import io.reactivex.Completable
-import io.reactivex.Observable
-import io.reactivex.android.MainThreadDisposable
-import io.reactivex.android.schedulers.AndroidSchedulers
-import io.reactivex.schedulers.Schedulers
 import junit.framework.TestCase
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.runBlocking
-import kotlinx.coroutines.test.runBlockingTest
-import org.junit.*
+import org.junit.After
+import org.junit.Before
+import org.junit.Rule
+import org.junit.Test
 import org.junit.runner.RunWith
-import java.util.Observer
 
+/*
+Android Test for Favourite Database
+ */
 @RunWith(AndroidJUnit4::class)
 class FavouriteShowDatabaseTest : TestCase() {
 

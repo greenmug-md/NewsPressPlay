@@ -1,7 +1,5 @@
 package com.greenmug.newspressplay.viewmodels
 
-import android.app.Application
-import android.content.Context
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import androidx.test.core.app.ApplicationProvider
 import com.greenmug.newspressplay.network.ApiClient
@@ -15,6 +13,9 @@ import org.junit.Assert
 import org.junit.Rule
 import org.junit.Test
 
+/*
+Tests for Trend View Model
+ */
 class  TrendViewModelTest {
 
     @get:Rule

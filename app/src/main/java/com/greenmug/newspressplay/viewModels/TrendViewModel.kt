@@ -20,7 +20,9 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-
+/*
+ViewModel for Trend View Model
+ */
 @HiltViewModel
 class TrendViewModel@Inject constructor(application: Application,
                       val edgeNetRepository: EdgeNetRepository

@@ -8,6 +8,9 @@ import javax.crypto.spec.IvParameterSpec
 import javax.crypto.spec.PBEKeySpec
 import javax.crypto.spec.SecretKeySpec
 
+/*
+Aes Encryption for Edgenet Api_key and Partner_id
+ */
 object AESEncyption {
 
     const val secretKey = "tK5UTui+DPh8lIlBxya5XVsmeDCoUl6vHhdIESMB6sQ="

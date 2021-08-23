@@ -14,7 +14,7 @@ import com.greenmug.newspressplay.models.News
 
 
 /*
-    Adapter for all Videos
+    Adapter for All Popular Videos
  */
 class BannerAdapter(private val news: List<News>, private val context : Context, private val playerListener: PlayerListener, private  val saveLaterListener: SaveLaterListener) : RecyclerView.Adapter<BannerAdapter.BannerShowViewHolder>(){
 
