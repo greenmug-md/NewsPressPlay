@@ -47,13 +47,10 @@ User can  Favourite Video by clicking on Pink Favourite Icon  and can Bookamrk u
 Once favourited or Bookmarked, It goes to the Watch Later Section.
 
 Its a Slider View Pager 
+ 
+   
+<img src="https://user-images.githubusercontent.com/34758872/130417780-ee5ec9c4-5d4a-4d12-a376-93bf29894c75.png" width="300">
 
-![Screenshot_20210823-141006](https://user-images.githubusercontent.com/34758872/130417780-ee5ec9c4-5d4a-4d12-a376-93bf29894c75.png)
-
-    
-<img src="https://user-images.githubusercontent.com/34758872/130397281-e7ebebc8-1268-4a15-9880-078c07134d48.png" width="200">
-  
-<img src="https://user-images.githubusercontent.com/34758872/130397281-e7ebebc8-1268-4a15-9880-078c07134d48.png" width="300">
  
 # Api.
 
