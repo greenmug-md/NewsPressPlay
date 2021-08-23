@@ -1,5 +1,7 @@
 # NewsPressPlay
 
+<img src="https://user-images.githubusercontent.com/34758872/130397136-0f55361f-7965-438f-b1c7-bba1e04c30a2.png" width="48">
+
  ![Screenshot_20210823-111803](https://user-images.githubusercontent.com/34758872/130397136-0f55361f-7965-438f-b1c7-bba1e04c30a2.png)
 
 
