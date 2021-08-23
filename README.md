@@ -68,7 +68,7 @@ Once favourited or Bookmarked, It goes to the Watch Later Section.
     Three Type of Nosql Database,  are created with channel, users and videos
     
     
-<img src="https://user-images.githubusercontent.com/34758872/130406038-66a4d959-778b-4f7c-997d-af91f695df3d.png" width="400"> 
+<img src="https://user-images.githubusercontent.com/34758872/130406038-66a4d959-778b-4f7c-997d-af91f695df3d.png" width="800"> 
  
     
 # Type of Videos Tested
