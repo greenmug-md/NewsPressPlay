@@ -1,6 +1,6 @@
 # NewsPressPlay
 
-<img src="https://user-images.githubusercontent.com/34758872/130397136-0f55361f-7965-438f-b1c7-bba1e04c30a2.png" width="48">
+<img src="https://user-images.githubusercontent.com/34758872/130397136-0f55361f-7965-438f-b1c7-bba1e04c30a2.png" width="200">
 
  ![Screenshot_20210823-111803](https://user-images.githubusercontent.com/34758872/130397136-0f55361f-7965-438f-b1c7-bba1e04c30a2.png)
 
@@ -11,9 +11,10 @@
 
 1. SignUp/SignIn : Using Google Firebase for Authentication, 
     
-![Screenshot_20210823-111808](https://user-images.githubusercontent.com/34758872/130397139-b936949e-7e60-478d-ba62-93346724c80d.png)
-
-![Screenshot_20210823-111814](https://user-images.githubusercontent.com/34758872/130397158-2c12498a-abf3-4c26-80cb-d4c078f72af4.png)
+    <img src="https://user-images.githubusercontent.com/34758872/130397139-b936949e-7e60-478d-ba62-93346724c80d.png" width="200">
+    
+     <img src="https://user-images.githubusercontent.com/34758872/130397158-2c12498a-abf3-4c26-80cb-d4c078f72af4.png" width="200">
+      
 
  Validations
  
