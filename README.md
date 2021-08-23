@@ -116,6 +116,13 @@ Open android Studio, Build and Run on Android Device , Android Device should be 
 
 App tested on Google Pixel Devices.
 
+To Deploy from apk 
+
+Go to SDK Manager, platform-tools directory
+
+./adb install apk file.
+
+
 # Android Unit Testing
 
 Open Android Unit Test Folder androidTest, Click on com.greenmug.newspressplay and Run tests . Tests written for ViewModels, EdgeNet Api, Database
