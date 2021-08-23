@@ -68,18 +68,7 @@
                 android:layout_marginTop="@dimen/_2sdp"
                 android:src="@drawable/ic_video"/>
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/favourite"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                app:layout_constraintTop_toBottomOf="@id/textContent"
-                app:layout_constraintEnd_toEndOf="parent"
-                android:background="@drawable/backgroud_subscribe"
-                android:src="@drawable/ic_subscribe"
-                android:padding="@dimen/_5sdp"
-                android:tint="@color/white"
-                android:layout_marginTop="@dimen/_2sdp"
-                />
+             
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>

@@ -81,7 +81,7 @@
             android:layout_marginTop="@dimen/_2sdp"
             android:src="@drawable/ic_video"/>
 
-        <com.makeramen.roundedimageview.RoundedImageView
+        <ImageView
             android:id="@+id/favourite"
             android:layout_width="@dimen/_25sdp"
             android:layout_height="@dimen/_25sdp"
@@ -89,7 +89,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             android:src="@drawable/ic_favorite"
             android:padding="@dimen/_5sdp"
-            android:tint="@color/favorite_background"
+            app:tint="@color/favorite_background"
             android:layout_marginTop="@dimen/_2sdp"
      />
 
