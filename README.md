@@ -8,17 +8,18 @@
 
 1. SignUp/SignIn : Using Google Firebase for Authentication, 
 
+<img src="https://user-images.githubusercontent.com/34758872/130397139-b936949e-7e60-478d-ba62-93346724c80d.png" width="300">
+    
+     
+<img src="https://user-images.githubusercontent.com/34758872/130397158-2c12498a-abf3-4c26-80cb-d4c078f72af4.png" width="300">
+
  1.3 Validations all fields are mandatory for Signup, else we will get a Toast message with Error
  SignUp, 
  2. Confirm Password and Password Should be Same
  3. Email should be valid
 
 
-     <img src="https://user-images.githubusercontent.com/34758872/130397139-b936949e-7e60-478d-ba62-93346724c80d.png" width="300">
-    
-     
-     
-     <img src="https://user-images.githubusercontent.com/34758872/130397158-2c12498a-abf3-4c26-80cb-d4c078f72af4.png" width="300">
+  
       
 
 
