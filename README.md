@@ -83,17 +83,16 @@ In app search for "Race" in search page to view Smooth Streaming
 
 <img width="1066" alt="Screenshot 2021-08-23 at 1 30 31 PM" src="https://user-images.githubusercontent.com/34758872/130412071-50d3057b-f567-4ba8-bc09-62bcddbe324f.png">
 
-3. HLS - https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/gear0/prog_index.m3u8
+3. HLS - https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8
 In app search for "Gears" in search page to view HLS Content
 Firebase
 <img width="1064" alt="Screenshot 2021-08-23 at 1 32 47 PM" src="https://user-images.githubusercontent.com/34758872/130412274-219f395f-538b-4cdd-9eab-0c721454d1b9.png">
 
 
-3. AV1 - https://storage.googleapis.com/wvmedia/2019/clear/av1/24/webm/llama_av1_480p_400.webm
-In app search for "Wild" in search page to view AV1
-
-<img width="1074" alt="Screenshot 2021-08-23 at 1 33 52 PM" src="https://user-images.githubusercontent.com/34758872/130412476-7f0994e4-8437-49df-aae9-60e315bdc382.png">
-
+3. Other - https://firebasestorage.googleapis.com/v0/b/newsfeedpress.appspot.com/o/news1.mp4?alt=media&token=45395a8d-61d0-444b-b975-e9f41b19a126
+In app search for "Vaccine" in search page Other type mp4
+Firebase
+<img width="1065" alt="Screenshot 2021-08-23 at 1 40 54 PM" src="https://user-images.githubusercontent.com/34758872/130413559-e3cee965-b953-45d7-b17c-1e3bb47fc680.png">
 
 
 
