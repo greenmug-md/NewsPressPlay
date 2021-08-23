@@ -112,7 +112,7 @@ Google Service JSON file already provided in App. You can use the same to run th
 
 Partner ID and Api Key from Edge Net provided for App in Constants class. You can use the same to run the app.
 
-Open android Studio, and pick the Project Existing Project 'NewsPressPlay'
+Open android Studio, and pick the Project Existing Project 'NewsPressPlay' , project compile with api level 30 , and minsdk is 26
 
 Build and Run on Android Device , Android Device should be Wifi or Network Enabled.
 
