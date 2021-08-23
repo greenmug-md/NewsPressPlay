@@ -61,7 +61,7 @@ App tested on Google Pixel Devices
 
 Open Android Unit Test Folder androidTest, Click on com.greenmug.newspressplay and Run tests . Tests written for ViewModels, EdgeNet Api, Database
 
-<img width="300" alt="Screenshot 2021-08-23 at 11 38 56 AM" src="https://user-images.githubusercontent.com/34758872/130398638-db045cad-576c-42ac-8d6d-a5ce5de5750b.png">
+<img width="800" alt="Screenshot 2021-08-23 at 11 38 56 AM" src="https://user-images.githubusercontent.com/34758872/130398638-db045cad-576c-42ac-8d6d-a5ce5de5750b.png">
 
 
 # Security
@@ -69,7 +69,7 @@ Open Android Unit Test Folder androidTest, Click on com.greenmug.newspressplay a
 Api Key and Partner Id, has been encrypted using AES Encryption.
 
 
-<img width="300" alt="Screenshot 2021-08-23 at 11 41 54 AM" src="https://user-images.githubusercontent.com/34758872/130398983-4c4457ed-d21e-498b-8ca8-c18682a28b0a.png">
+<img width="800" alt="Screenshot 2021-08-23 at 11 41 54 AM" src="https://user-images.githubusercontent.com/34758872/130398983-4c4457ed-d21e-498b-8ca8-c18682a28b0a.png">
 
 
 
