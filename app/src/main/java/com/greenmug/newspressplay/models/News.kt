@@ -12,4 +12,5 @@ data class News(
     @SerializedName("name") var name: String,
     @SerializedName("image") var image: String,
     @SerializedName("url") var url: String,
+    @SerializedName("content") var content: String
 ): Serializable

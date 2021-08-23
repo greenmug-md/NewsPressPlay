@@ -10,12 +10,12 @@ object Constants {
     const val KEY_EMAIL = "email"
     const val KEY_PASSWORD = "password"
     const val KEY_USER_ID = "user_id"
-    const val KEY_FCM_TOKEN = "fcm_token"
     const val KEY_PREFERENCE_NAME = "videoMeetingPreference"
     const val KEY_IS_SIGNED_IN = "isSignedIn"
     const val EDGENET_CLOUD = "https://developerapis.stg-alefedge.com/et/"
-    const val API_KEY = "KNQF0ZP-ETT4X42-HPSVZCD-ZA53PHH"
-    const val PARTNER_ID = "61124b2a45455600071c2bf3"
+    const val API_KEY = "kbfr4yN53gh8fK0bQTvh/HrV/SRki1VeOoGA3gK9INY="
+    const val PARTNER_ID = "anEEevmKc0IQA832xGwsD6/iqDB8VSm1kJm9ZV7OKs4="
     const val CHANNEL_0 = "0"
     const val KEY_CHANNEL = "channel"
+    const val EDNET_URL = false
 }

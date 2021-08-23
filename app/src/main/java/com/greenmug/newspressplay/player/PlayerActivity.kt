@@ -23,6 +23,8 @@ import com.google.android.exoplayer2.ui.PlayerView
 import com.google.android.exoplayer2.upstream.DataSource
 import com.google.android.exoplayer2.upstream.DefaultHttpDataSourceFactory
 import com.google.android.exoplayer2.util.Util
+import com.greenmug.newspressplay.utilities.Constants
+import com.greenmug.newspressplay.utilities.Constants.EDNET_URL
 
 
 /*
@@ -64,8 +66,11 @@ class PlayerActivity : AppCompatActivity() {
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
         progressBar=findViewById(R.id.playerProgress)
         playerView = findViewById(R.id.playerView)
-        videoUrl = intent.getStringExtra("videoUrl")
-        Log.d("player","Url"+videoUrl)
+        var url = intent.getStringExtra("videoUrl")
+        var edgeNetUrl = intent.getStringExtra("edgeNetUrl")
+        Log.d("Malathi EdgeNet)u"," "+edgeNetUrl)
+        Log.d("Malathi url"," "+url)
+        videoUrl =  if(EDNET_URL) edgeNetUrl else url
         duration = intent.getIntExtra("showTime",0)
     }
 

@@ -39,18 +39,18 @@ class BannerAdapter(private val news: List<News>, private val context : Context,
             binding.news = news
             binding.executePendingBindings()
             binding?.imagePoster.setOnClickListener {
-                playerListener.onPlayer(news.url)
+                playerListener.onPlayer(news.url, news.content_id)
             }
 
             binding?.favourite?.setOnClickListener {
                 var favourites = Favourites(name=news.name,image=news.image,url = news.url, content_id = news.content_id,
-                type="F")
+                type="F",content = news.content)
                 saveLaterListener?.favourite(favourites)
             }
 
             binding?.bookmark?.setOnClickListener {
                 var bookmarks = Favourites(name=news.name,image=news.image,url = news.url, content_id = news.content_id,
-                    type="B")
+                    type="B",content = news.content)
                 saveLaterListener?.bookMark(bookmarks)
             }
         }

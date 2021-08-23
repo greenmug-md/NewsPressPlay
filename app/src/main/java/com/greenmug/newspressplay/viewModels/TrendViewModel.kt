@@ -1,17 +1,32 @@
 package com.greenmug.newspressplay.viewModels
 
 import android.app.Application
+import android.content.Context
+import android.content.Intent
+import android.os.Bundle
+import android.util.Log
+import androidx.core.content.ContextCompat
+import androidx.core.content.ContextCompat.startActivity
 import androidx.lifecycle.*
 import com.google.firebase.firestore.FirebaseFirestore
 import com.greenmug.newspressplay.database.FavouriteShowDatabase
+import com.greenmug.newspressplay.fragments.TrendFragment
 import com.greenmug.newspressplay.models.Favourites
 import com.greenmug.newspressplay.models.News
+import com.greenmug.newspressplay.player.PlayerActivity
+import com.greenmug.newspressplay.repositories.EdgeNetRepository
 import com.greenmug.newspressplay.utilities.Constants
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 
-class TrendViewModel(application: Application) : AndroidViewModel(application) {
+@HiltViewModel
+class TrendViewModel@Inject constructor(application: Application,
+                      val edgeNetRepository: EdgeNetRepository
+) : AndroidViewModel(application) {
      var favouriteShowDatabase: FavouriteShowDatabase?=null
+
     init {
         favouriteShowDatabase = FavouriteShowDatabase.getTvFacouritesDatabase(application)
     }
@@ -34,7 +49,8 @@ class TrendViewModel(application: Application) : AndroidViewModel(application) {
                             var url = m.getString("url")
                             var image = m.getString("image")
                             var content_id  =  m.getString("content_id")
-                            var s = News(name = name!!, image = image!!, url = url!!,content_id = content_id!!);
+                            var content = m.getString("content")
+                            var s = News(name = name!!, image = image!!, url = url!!,content_id = content_id!!, content = content!!);
                             l.add(s);
                         }
                         list.postValue(l)
@@ -66,7 +82,8 @@ class TrendViewModel(application: Application) : AndroidViewModel(application) {
                             var url = m.getString("url")
                             var image = m.getString("image")
                             var content_id  =  m.getString("content_id")
-                            var s = News(name = name!!, image = image!!, url = url!!,content_id = content_id!!);
+                            var content = m.getString("content")
+                            var s = News(name = name!!, image = image!!, url = url!!,content_id = content_id!!,content = content!!);
                             l.add(s);
                         }
                         list.postValue(l)
@@ -78,4 +95,6 @@ class TrendViewModel(application: Application) : AndroidViewModel(application) {
                 }
         }
     }
+
+
 }

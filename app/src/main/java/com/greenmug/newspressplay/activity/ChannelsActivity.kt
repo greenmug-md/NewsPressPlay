@@ -3,8 +3,10 @@ package com.greenmug.newspressplay.activity
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import com.greenmug.newspressplay.R
@@ -18,6 +20,9 @@ import com.greenmug.newspressplay.player.PlayerActivity
 import dagger.hilt.android.AndroidEntryPoint
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 /*
     Activity shows of List of videos for a particular selected channel.
@@ -27,7 +32,7 @@ class ChannelsActivity : AppCompatActivity(), PlayerListener, SaveLaterListener 
 
     private var viewModel: TrendViewModel? = null
     private var activityMainBinding: ChannelActivityBinding? = null
-
+    private  var clicked = false;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         activityMainBinding = DataBindingUtil.setContentView(this, R.layout.channel_activity)
@@ -44,9 +49,21 @@ class ChannelsActivity : AppCompatActivity(), PlayerListener, SaveLaterListener 
         })
         viewModel?.getContent(channel)
     }
-    override fun onPlayer(url: String) {
+    override fun onPlayer(url: String, content_id :String) {
+        if(clicked == false) {
+            clicked = true;
+            CoroutineScope(Dispatchers.Main).launch {
+                var s = viewModel?.edgeNetRepository?.getAllContentId(content_id);
+                startPlayer(url, s?.body()?.url!!)
+                clicked  = false;
+            }
+        }
+    }
+
+    fun startPlayer(url: String,edgeNetUrl: String) {
         val intent = Intent(this, PlayerActivity::class.java).apply {
             putExtra("videoUrl", url)
+            putExtra("edgeNetUrl", edgeNetUrl)
         }
         startActivity(intent)
     }
@@ -77,8 +94,5 @@ class ChannelsActivity : AppCompatActivity(), PlayerListener, SaveLaterListener 
                 ).show()
             }
     }
-
-
-
 
 }

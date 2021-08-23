@@ -7,12 +7,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.greenmug.newspressplay.R
 import com.greenmug.newspressplay.databinding.ItemContainerWatchlaterBinding
 import com.greenmug.newspressplay.listeners.PlayerListener
+import com.greenmug.newspressplay.listeners.RemoveLaterListener
 import com.greenmug.newspressplay.models.Favourites
 
 /*
     Adapter for all Watch Later Videos
  */
-class WatchLaterAdapter(private val news: List<Favourites>,private val playerListener: PlayerListener) : RecyclerView.Adapter<WatchLaterAdapter.WatchLaterViewHolder>(){
+class WatchLaterAdapter(private val news: List<Favourites>,private val playerListener: PlayerListener, private val  removeLaterListener: RemoveLaterListener) : RecyclerView.Adapter<WatchLaterAdapter.WatchLaterViewHolder>(){
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): WatchLaterViewHolder {
         val inflater = LayoutInflater.from(parent.context)
@@ -36,7 +37,10 @@ class WatchLaterAdapter(private val news: List<Favourites>,private val playerLis
             binding.favourites = news
             binding.executePendingBindings()
             binding?.imagePoster.setOnClickListener {
-                playerListener.onPlayer(news.url)
+                playerListener.onPlayer(news.url, news.content_id)
+            }
+            binding?.delete.setOnClickListener {
+                removeLaterListener?.remove(news, news.type);
             }
         }
     }

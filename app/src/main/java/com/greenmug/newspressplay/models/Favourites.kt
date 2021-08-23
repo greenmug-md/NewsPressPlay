@@ -11,6 +11,7 @@ data class Favourites(
     @SerializedName("image") var image: String,
     @SerializedName("url") var url: String,
     @SerializedName("content_id") var content_id: String,
-    @SerializedName("type") var type: String
+    @SerializedName("type") var type: String,
+    @SerializedName("content") var content: String
 ): Serializable {
 }

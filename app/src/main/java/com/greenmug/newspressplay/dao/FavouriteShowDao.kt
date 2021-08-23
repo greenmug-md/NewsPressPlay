@@ -1,9 +1,11 @@
 package com.greenmug.newspressplay.dao
 
+import androidx.annotation.VisibleForTesting
 import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.greenmug.newspressplay.models.Favourites
 import io.reactivex.Completable
+import io.reactivex.Flowable
 
 /*
     Favourite Database Data Access Object
@@ -19,4 +21,8 @@ interface FavouriteShowDao {
 
     @Delete
     fun removeFromWatchList(favourites: Favourites): Completable
+
+    @VisibleForTesting
+    @Query("SELECT * FROM favourites")
+    fun selectAll(): Flowable<List<Favourites>>
 }

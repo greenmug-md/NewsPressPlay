@@ -67,7 +67,7 @@
             android:textColor="@color/primary_label"
             android:textSize="@dimen/_8ssp"
             android:maxLength="@integer/material_motion_duration_medium_2"
-            android:text="Auto racing is a motorsport involving the racing of automobiles for competition"
+            android:text="@{News.content}"
             app:layout_constraintTop_toBottomOf="@id/imagePoster"
             android:layout_marginTop="@dimen/_2sdp"/>
 

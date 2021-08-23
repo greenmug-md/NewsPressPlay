@@ -21,20 +21,25 @@ import com.greenmug.newspressplay.models.Favourites
 import com.greenmug.newspressplay.player.PlayerActivity
 
 import com.greenmug.newspressplay.viewModels.SearchViewModel
+import dagger.hilt.android.AndroidEntryPoint
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import java.util.*
 import kotlin.collections.ArrayList
 
 /*
     Activity shows of List of Videos Search by the Keyword
  */
+@AndroidEntryPoint
 class SearchActivity : AppCompatActivity(), PlayerListener, SaveLaterListener{
 
     private var activitySearchBinding: ActivitySearchBinding? = null
     private var viewModel: SearchViewModel? = null
     private var timer: Timer? = null
-
+    private  var clicked = false;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         activitySearchBinding = DataBindingUtil.setContentView(this, R.layout.activity_search)
@@ -77,12 +82,25 @@ class SearchActivity : AppCompatActivity(), PlayerListener, SaveLaterListener{
         activitySearchBinding?.inputSearch?.requestFocus()
     }
 
-    override fun onPlayer(url: String) {
+    override fun onPlayer(url: String, content_id :String) {
+        if(clicked == false) {
+            clicked = true;
+            CoroutineScope(Dispatchers.Main).launch {
+                var s = viewModel?.edgeNetRepository?.getAllContentId(content_id);
+                startPlayer(url, s?.body()?.url!!)
+                clicked  = false;
+            }
+        }
+    }
+
+    fun startPlayer(url: String,edgeNetUrl: String) {
         val intent = Intent(this, PlayerActivity::class.java).apply {
             putExtra("videoUrl", url)
+            putExtra("edgeNetUrl", edgeNetUrl)
         }
         startActivity(intent)
     }
+
 
     override fun bookMark(news: Favourites) {
         viewModel?.favouriteShowDatabase?.tvFacouritesDao()?.addToWatchList(news)

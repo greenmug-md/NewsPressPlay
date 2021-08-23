@@ -40,9 +40,18 @@ class SignInActivity : AppCompatActivity() {
                 )
             )
         }
+        findViewById<View>(R.id.skip).setOnClickListener { v: View? ->
+            startActivity(
+                Intent(
+                    applicationContext,
+                    HomeActivity::class.java
+                )
+            )
+        }
         inputEmail = findViewById(R.id.inputEmail)
         inputPassword = findViewById(R.id.inputPassword)
         buttonSignIn = findViewById(R.id.buttonSignIn)
+
         signInProgressBar = findViewById(R.id.signInProgressBar)
         buttonSignIn?.setOnClickListener(View.OnClickListener { v: View? ->
             if (getInputsContentText(inputEmail).isEmpty()) {
@@ -57,6 +66,7 @@ class SignInActivity : AppCompatActivity() {
                 signIn()
             }
         })
+
     }
 
     private fun signIn() {

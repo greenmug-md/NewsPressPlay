@@ -9,15 +9,17 @@ import com.greenmug.newspressplay.listeners.SaveLaterListener
 import com.greenmug.newspressplay.models.Channels
 import com.greenmug.newspressplay.models.Favourites
 import com.greenmug.newspressplay.models.News
+import com.greenmug.newspressplay.repositories.EdgeNetRepository
 import com.greenmug.newspressplay.utilities.Constants
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-
-class SearchViewModel(application: Application) : AndroidViewModel(application) {
+@HiltViewModel
+class SearchViewModel@Inject constructor(application: Application,  val edgeNetRepository: EdgeNetRepository) : AndroidViewModel(application) {
     var favouriteShowDatabase: FavouriteShowDatabase?=null
 
-
+    var edgeNetUrl = MutableLiveData<String>()
     init {
         favouriteShowDatabase = FavouriteShowDatabase.getTvFacouritesDatabase(application)
     }
@@ -42,24 +44,36 @@ class SearchViewModel(application: Application) : AndroidViewModel(application) 
                             var url = m.getString("url")
                             var image = m.getString("image")
                             var content_id  =  m.getString("content_id")
-                            var s = News(name = name!!, image = image!!, url = url!!,content_id = content_id!!);
+                            var content = m.getString("content")
+                            var s = News(name = name!!, image = image!!, url = url!!,content_id = content_id!!,content = content!!);
                             l.add(s);
                         }
                         list.postValue(l)
-                        Log.d("Malathi", "I am here ")
+
                     } else {
 
                     }
                 }
                 .addOnFailureListener {
-                    Log.d("Malathi", "Genre = ")
+
                 }
 
         }
 
     }
-
-
+    fun  startPlayer(url:String, content_id : String) {
+        try {
+            viewModelScope.launch {
+                var edgeNet = edgeNetRepository?.getAllContentId(content_id)
+                if (edgeNet != null && edgeNet?.body() != null && edgeNet?.isSuccessful && edgeNet?.body()?.url != null) {
+                    edgeNetUrl.postValue(edgeNet?.body()?.url!!)
+                } else {
+                    edgeNetUrl.postValue(url);
+                }
+            }
+        } catch (e: Exception) {
+        }
+    }
 
 
 }

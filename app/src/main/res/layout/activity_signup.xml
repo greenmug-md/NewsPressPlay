@@ -99,7 +99,7 @@
                         android:importantForAutofill="no"
                         android:includeFontPadding="false"
                         android:inputType="text"
-                        android:textColor="@color/colorPrimaryText"
+                        android:textColor="@color/primary_label"
                         android:textColorHint="@color/colorHintText"
                         android:textSize="@dimen/_13ssp" />
 
@@ -128,7 +128,7 @@
                         android:importantForAutofill="no"
                         android:includeFontPadding="false"
                         android:inputType="text"
-                        android:textColor="@color/colorPrimaryText"
+                        android:textColor="@color/primary_label"
                         android:textColorHint="@color/colorHintText"
                         android:textSize="@dimen/_13ssp" />
 
@@ -157,7 +157,7 @@
                         android:importantForAutofill="no"
                         android:includeFontPadding="false"
                         android:inputType="textEmailAddress"
-                        android:textColor="@color/colorPrimaryText"
+                        android:textColor="@color/primary_label"
                         android:textColorHint="@color/colorHintText"
                         android:textSize="@dimen/_13ssp" />
 
@@ -187,7 +187,7 @@
                         android:importantForAutofill="no"
                         android:includeFontPadding="false"
                         android:inputType="textPassword"
-                        android:textColor="@color/colorPrimaryText"
+                        android:textColor="@color/primary_label"
                         android:textColorHint="@color/colorHintText"
                         android:textSize="@dimen/_13ssp" />
 
@@ -217,7 +217,7 @@
                         android:importantForAutofill="no"
                         android:includeFontPadding="false"
                         android:inputType="textPassword"
-                        android:textColor="@color/colorPrimaryText"
+                        android:textColor="@color/primary_label"
                         android:textColorHint="@color/colorHintText"
                         android:textSize="@dimen/_13ssp" />
 

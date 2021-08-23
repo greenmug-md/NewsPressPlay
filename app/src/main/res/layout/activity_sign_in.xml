@@ -11,6 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+
+
         <LinearLayout
             android:id="@+id/layoutHeader"
             android:layout_width="match_parent"
@@ -20,12 +22,13 @@
             android:orientation="vertical"
             app:layout_constraintTop_toTopOf="parent">
 
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/ubuntu_bold"
                 android:includeFontPadding="false"
-                android:text="Welcome"
+                android:text="Welcome to"
                 android:textColor="@color/colorTextIcons"
                 android:textSize="@dimen/_16ssp" />
 
@@ -95,7 +98,7 @@
                     android:importantForAutofill="no"
                     android:includeFontPadding="false"
                     android:inputType="textEmailAddress"
-                    android:textColor="@color/colorPrimaryText"
+                    android:textColor="@color/primary_label"
                     android:textColorHint="@color/colorHintText"
                     android:textSize="@dimen/_13ssp" />
 
@@ -124,8 +127,7 @@
                     android:importantForAutofill="no"
                     android:includeFontPadding="false"
                     android:inputType="textPassword"
-                    android:text="123456"
-                    android:textColor="@color/colorPrimaryText"
+                    android:textColor="@color/primary_label"
                     android:textColorHint="@color/colorHintText"
                     android:textSize="@dimen/_13ssp" />
 
@@ -146,6 +148,7 @@
             android:textColor="@color/colorTextIcons"
             android:textSize="@dimen/_13ssp"
             app:layout_constraintTop_toBottomOf="@id/cardSignIn" />
+
 
         <ProgressBar
             android:id="@+id/signInProgressBar"
@@ -186,6 +189,21 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toBottomOf="@id/textNoAccount" />
 
+        <TextView
+            android:id="@+id/skip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:padding="@dimen/_6sdp"
+            android:text="SKIP"
+            android:textAllCaps="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textSignUp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -23,7 +23,6 @@ import dagger.hilt.android.AndroidEntryPoint
 class ChannelFragment() : Fragment(), ChannelListener  {
 
     private var favouriteFragmentBinding: FavouriteFragmentBinding? = null
-
     private lateinit var viewModel: ChannelViewModel
 
     override fun onCreateView(

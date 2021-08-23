@@ -16,13 +16,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-@HiltViewModel
-class ChannelViewModel  @Inject constructor(
-    private val edgeNetRepository: EdgeNetRepository
-): ViewModel() {
-
-    private val _home = MutableLiveData<Resource<EdgeNetCloud?>>()
-    val home: LiveData<Resource<EdgeNetCloud?>> = _home
+class ChannelViewModel  (): ViewModel() {
     var list = MutableLiveData<ArrayList<News>>()
     var channels = MutableLiveData<ArrayList<Channels>>()
     fun  getContent()   {
@@ -42,7 +36,8 @@ class ChannelViewModel  @Inject constructor(
                                 var name = m.getString("name")
                                 var url = m.getString("url")
                                 var image = m.getString("image")
-                                var s = News(name = name!!, image = image!!, url = url!!, content_id = content_id!!);
+                                var content = m.getString("content")
+                                var s = News(name = name!!, image = image!!, url = url!!, content_id = content_id!!,content = content!!);
                                 l.add(s);
                             }
                             list.postValue(l)
