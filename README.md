@@ -31,6 +31,7 @@
 
 9. Bookmark Video
 
+
 <img src="https://user-images.githubusercontent.com/34758872/130397281-e7ebebc8-1268-4a15-9880-078c07134d48.png" width="300">
 
 11. Channels
@@ -48,9 +49,28 @@ Watch Later
 
 # Deployment 
 
+Android Studio Version Used
+
+<img width="300" alt="Screenshot 2021-08-23 at 11 39 31 AM" src="https://user-images.githubusercontent.com/34758872/130398716-d26bb4f3-ebeb-4acd-bd4d-965367fa66bd.png">
+
+Open android Studio, Build and Run on Android Device
+
+App tested on Google Pixel Devices
+
 # Android Unit Testing
 
+Open Android Unit Test Folder androidTest, Click on com.greenmug.newspressplay and Run tests . Tests written for ViewModels, EdgeNet Api, Database
+
+<img width="300" alt="Screenshot 2021-08-23 at 11 38 56 AM" src="https://user-images.githubusercontent.com/34758872/130398638-db045cad-576c-42ac-8d6d-a5ce5de5750b.png">
+
+
 # Security
+
+Api Key and Partner Id, has been encrypted using AES Encryption.
+
+
+<img width="300" alt="Screenshot 2021-08-23 at 11 41 54 AM" src="https://user-images.githubusercontent.com/34758872/130398983-4c4457ed-d21e-498b-8ca8-c18682a28b0a.png">
+
 
 
 
