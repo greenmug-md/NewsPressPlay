@@ -16,6 +16,8 @@
  2. Confirm Password and Password Should be Same
  3. Email should be valid
 
+Existing User: new@gmail.com Password : Blue 
+
 
 ## Bottom Navigation, has 3 pages
     
