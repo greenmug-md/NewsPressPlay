@@ -39,21 +39,18 @@ User can Search for Video
 
 <img src="https://user-images.githubusercontent.com/34758872/130397266-2927c8b5-3902-4c79-8cba-b99af0212f2b.png" width="200">
 
-## Favourite Video
+## Favourite Video and Bookmark Video
 
-User can view Favourite Video 
+User can  Favourite Video by clicking on Pink Favourite Icon  and can Bookamrk using the Bookmark icon on the far top left corner.
+Once favourited or Bookmarked, It goes to the Watch Later Section.
     
 <img src="https://user-images.githubusercontent.com/34758872/130397281-e7ebebc8-1268-4a15-9880-078c07134d48.png" width="200">
-
-## Bookmark Video
-    
-User can view Bookmarkk Video 
   
 <img src="https://user-images.githubusercontent.com/34758872/130397281-e7ebebc8-1268-4a15-9880-078c07134d48.png" width="300">
  
 # Api.
 
-    Videos are uploaded to EdgeNet Api, and the content_id is saved in
+    Videos are uploaded to EdgeNet Api, and the content_id is saved for the respective video in Firebase firestore.
     
     1. Configure A Service – Video Enablement, Once Service Configured, we receive the API_KEY and Partner_ID. The encrypted values are present
        in import com.greenmug.newspressplay.utilities.Constants file.
@@ -64,14 +61,26 @@ User can view Bookmarkk Video
     
     4. Get url for the given content id. /api/v1/stream-tech/content/get-url/{content_id}
 
-    FireBase FireStore, No Sql datbase : setup google.service.json file has the configuration to connect to Firebase. Three Type of Database, 
-    are created channel, users and videos
+    FireBase FireStore, No Sql datbase : setup google.service.json file has the configuration to connect to Firebase. 
+    
+    Three Type of Nosql Database,  are created with channel, users and videos
     
     
-<img src="https://user-images.githubusercontent.com/34758872/130406038-66a4d959-778b-4f7c-997d-af91f695df3d.png" width="300"> 
+<img src="https://user-images.githubusercontent.com/34758872/130406038-66a4d959-778b-4f7c-997d-af91f695df3d.png" width="400"> 
  
     
 # Type of Videos Tested
+
+Video Type 
+
+1. Clear DASH  - Video added https://storage.googleapis.com/wvmedia/clear/h264/tears/tears.mpd
+Firebase <img width="1063" alt="Screenshot 2021-08-23 at 1 26 08 PM" src="https://user-images.githubusercontent.com/34758872/130411331-863c3eb9-6c37-4ac7-b16c-fd122236a4cd.png">
+
+In app search for "Tears" in search page to view Clear Dash 
+
+2. 
+
+
 
 
 
