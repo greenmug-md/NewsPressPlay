@@ -74,12 +74,25 @@ Once favourited or Bookmarked, It goes to the Watch Later Section.
 Video Type 
 
 1. Clear DASH  - Video added https://storage.googleapis.com/wvmedia/clear/h264/tears/tears.mpd
-Firebase <img width="1063" alt="Screenshot 2021-08-23 at 1 26 08 PM" src="https://user-images.githubusercontent.com/34758872/130411331-863c3eb9-6c37-4ac7-b16c-fd122236a4cd.png">
-
 In app search for "Tears" in search page to view Clear Dash 
+Firebase
+<img width="1063" alt="Screenshot 2021-08-23 at 1 26 08 PM" src="https://user-images.githubusercontent.com/34758872/130411331-863c3eb9-6c37-4ac7-b16c-fd122236a4cd.png">
 
-2. 
+2. Smooth Streaming - Video Added https://playready.directtaps.net/smoothstreaming/SSWSS720H264/SuperSpeedway_720.ism/Manifest
+In app search for "Race" in search page to view Smooth Streaming
 
+<img width="1066" alt="Screenshot 2021-08-23 at 1 30 31 PM" src="https://user-images.githubusercontent.com/34758872/130412071-50d3057b-f567-4ba8-bc09-62bcddbe324f.png">
+
+3. HLS - https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/gear0/prog_index.m3u8
+In app search for "Gears" in search page to view HLS Content
+Firebase
+<img width="1064" alt="Screenshot 2021-08-23 at 1 32 47 PM" src="https://user-images.githubusercontent.com/34758872/130412274-219f395f-538b-4cdd-9eab-0c721454d1b9.png">
+
+
+3. AV1 - https://storage.googleapis.com/wvmedia/2019/clear/av1/24/webm/llama_av1_480p_400.webm
+In app search for "Wild" in search page to view AV1
+
+<img width="1074" alt="Screenshot 2021-08-23 at 1 33 52 PM" src="https://user-images.githubusercontent.com/34758872/130412476-7f0994e4-8437-49df-aae9-60e315bdc382.png">
 
 
 
