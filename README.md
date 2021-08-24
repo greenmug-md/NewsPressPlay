@@ -26,7 +26,7 @@ Popular OR Trending Videos
 <img src="https://user-images.githubusercontent.com/34758872/130397221-a50ac554-3202-4530-a34f-bc7636ba351b.png" width="200">
      
 
-Channels: TV Channel to get Specific Genre of Videos
+Channels: TV Channel to get Specific Genre of Videos :- In my app , Channels are considered to be from different content agencies.
 
 <img src="https://user-images.githubusercontent.com/34758872/130397297-fae79917-a7b2-4fbf-8648-c818f728497b.png" width="200">
  
