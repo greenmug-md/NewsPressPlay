@@ -13,7 +13,7 @@ Apart from viewing the video news feed, the user will be able to mark that video
 - Backend:  
   - Alefedge Video Enablement API for Video Storage in EdgeNet.
   - Firebase for Video Storage  (copy of video if Edgenet url fails to load).
-  - Firebase  for User Authentication as well as storing Video Meta Data such as Images, Titles, Genre and Description
+  - Firebase for User Authentication as well as storing Video Meta Data such as Images, Titles, Genre and Description
   
 - Frontend: **Android using Kotlin**
   -  Exoplayer Library for Video and Audio Player to play different video format types such as Clear DASH, HLS, Smooth Streaming.
@@ -25,7 +25,7 @@ Apart from viewing the video news feed, the user will be able to mark that video
     
 ## Working on the Backend
 
-The Three Api's I focused from the Swagger for [Video Enablement Api Swagger](https://developerapis.stg-alefedge.com/api-docs-edgetube).
+The Three Api's I focused from [Video Enablement Api Swagger](https://developerapis.stg-alefedge.com/api-docs-edgetube).
 1. Add content to server:  /api/v1/stream-tech/content/add 
 2. Get all content details for given partner: /api/v1/stream-tech/content/get-all
 3. Get url for the given content id : /api/v1/stream-tech/content/get-url/{content_id}
@@ -34,7 +34,7 @@ In order to use the Api's we need two values 'Api Key' and 'Partner Name'.
 I followed [Alfedge User Guide Documentation](https://developer.alefedge.com/get-started/create-edge-native-services/user-guide/) provided on the Alefedge website to gather both these values to use the Apis. 
 The content_id field uniquely identifies the video content in both the Firebase and Alfedege Video Storage. 
 
-Response of Posting Video to EdgeNet
+Response of Posting Video to EdgeNet (/api/v1/stream-tech/content/add) 
 ```
 {
   "URLs": [
@@ -78,21 +78,22 @@ interface ApiEdgeNetService {
 
  ## Working on the FrontEnd
  
-I started with the  Video Player Component using Google Opensource [Exoplayer Library](https://github.com/google/ExoPlayer).
- This Guide [Developer Guide for Exoplayer](https://exoplayer.dev/hello-world.html) helped in understanding and handling different media Types such as HLS, DASH, Smooth Streaming.
+I started with building Video Player Component using Google's Opensource [Exoplayer Library](https://github.com/google/ExoPlayer).
+ This Guide [Developer Guide for Exoplayer](https://exoplayer.dev/hello-world.html) helped in understanding and handling different media Types such as HLS, DASH, Smooth Streaming. It provides an alternative to Android’s MediaPlayer API for playing audio and video both locally and over the Internet
  
-Sign In and Sign Up Components were built using Firebase Authentication.
-Once User SignUps using email, password and 
+Sign In and Sign Up UI Components using Firebase Authentication for the backend.
+
+Once User Logs In using username and password
 application lands on a homepage which has a BottomNavigationView , containing 3 pages
 
  1. Trending Videos
  2. Channels (Clicking on Channel will open Videos corresponding to that particular channel)
- 3. Watch Later(Favourites and Watch Later).
+ 3. Watch Later(Favourites and Bookmark).
  
  <img src="https://user-images.githubusercontent.com/34758872/130397297-fae79917-a7b2-4fbf-8648-c818f728497b.png" width="200">
  
- Favourites and Watch Later data was stored in local db using Room Database.
- Lifecycle aware LiveData and ViewModels were used , so that it can update the View Layer when underlying data changes.
+ Favourites and Bookmark data are stored in local db using Room Database.
+ Lifecycle aware LiveData and ViewModels were used , so that it can update the View Layer when underlying Data changes.
  Network Calls were made with help of Kotlin Coroutines and RxJava.
  
  <img src="https://user-images.githubusercontent.com/34758872/130397310-7a346e74-9f63-4ecb-a554-f452088500ae.png" width="200">
@@ -151,5 +152,5 @@ Android Test for Database
 ```
  
 ## Conclusion
-This Challenge helped me in understanding how to the use the [EdgeNet Video Enablement API](https://alefedge.com/products/prepackaged-solutions/dev-video-enablement/) effectively to store and retrieve information, making an Video Player Component using OpenSource Exoplayer to handle different type of media types,  usign modern Architecture Components along with Room Database to build components for App.
+This Challenge helped me in understanding how to the use the [EdgeNet Video Enablement API](https://alefedge.com/products/prepackaged-solutions/dev-video-enablement/) effectively to store and retrieve information, making an Video Player Component using OpenSource Exoplayer to handle different type of media types,  using modern Architecture Components along with Room Database to build components for Android App.
 
