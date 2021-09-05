@@ -90,14 +90,14 @@ App lands on a homepage which has a BottomNavigationView , containing 3 pages
  3. Watch Later(Favourites and Watch Later).
  
  
- 
- ![alt text](https://user-images.githubusercontent.com/34758872/130397297-fae79917-a7b2-4fbf-8648-c818f728497b.png) 
+ <img src="https://user-images.githubusercontent.com/34758872/130397297-fae79917-a7b2-4fbf-8648-c818f728497b.png" width="200">
  
  Favourites and Watch Later data was stored in local db using Room Database.
  Lifecycle aware LiveData and ViewModels were used , so that it can update the View Layer when underlying data changes.
  Network Calls were made with help of Kotlin Coroutines and RxJava.
-  ![alt text](
- https://user-images.githubusercontent.com/34758872/130397310-7a346e74-9f63-4ecb-a554-f452088500ae.png)
+ 
+  <img src="https://user-images.githubusercontent.com/34758872/130397310-7a346e74-9f63-4ecb-a554-f452088500ae.png" width="200">
+
  
 Android Unit Testing for Network Module, View Models and Database
  
