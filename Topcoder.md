@@ -1,6 +1,6 @@
 # EdgeNet Challenge Series - Video News Feeds App Solution Writeup
 
-The challenge was to build a mobile application [Video News Feeds Application Challenge](https://www.topcoder.com/challenges/1af89a1d-7a29-4617-90f6-675064dc076c) using Alefedge Video Enablement API. Here I will discuss my solution and my approach to the requirements during the development of the application.
+The challenge was to build a mobile application [Video News Feeds Application Challenge](https://www.topcoder.com/challenges/1af89a1d-7a29-4617-90f6-675064dc076c) using Alefedge [EdgeNet Video Enablement API](https://alefedge.com/products/prepackaged-solutions/dev-video-enablement/). Here I will discuss my solution and my approach to the requirements during the development of the application.
 
 ## Functional Requirements
 The Main Requirement was for the user to be able to load and view news feed videos in low latency using the [EdgeNet Video Enablement API](https://alefedge.com/products/prepackaged-solutions/dev-video-enablement/)
