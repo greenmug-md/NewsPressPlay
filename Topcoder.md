@@ -153,4 +153,5 @@ Android Test for Database
  
 ## Conclusion
 This Challenge helped me in understanding how to the use the [EdgeNet Video Enablement API](https://alefedge.com/products/prepackaged-solutions/dev-video-enablement/) effectively to store and retrieve information, making an Video Player Component using OpenSource Exoplayer to handle different type of media types,  and using modern Architecture Components along with Room Database to build components for Android App.
+Video Link of Application : https://drive.google.com/file/d/10D-vWKOdMeu5jPKDWARYPp1YvySrpgsA/view?usp=sharing
 
