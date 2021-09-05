@@ -84,7 +84,7 @@ I started with building Video Player Component using Google's Opensource [Exopla
 Sign In and Sign Up UI Components using Firebase Authentication for the backend.
 
 Once User Logs In using username and password
-application lands on a homepage which has a BottomNavigationView , containing 3 pages
+Application lands on the Homepage which has a BottomNavigationView , containing 3 screens
 
  1. Trending Videos
  2. Channels (Clicking on Channel will open Videos corresponding to that particular channel)
@@ -152,5 +152,5 @@ Android Test for Database
 ```
  
 ## Conclusion
-This Challenge helped me in understanding how to the use the [EdgeNet Video Enablement API](https://alefedge.com/products/prepackaged-solutions/dev-video-enablement/) effectively to store and retrieve information, making an Video Player Component using OpenSource Exoplayer to handle different type of media types,  using modern Architecture Components along with Room Database to build components for Android App.
+This Challenge helped me in understanding how to the use the [EdgeNet Video Enablement API](https://alefedge.com/products/prepackaged-solutions/dev-video-enablement/) effectively to store and retrieve information, making an Video Player Component using OpenSource Exoplayer to handle different type of media types,  and using modern Architecture Components along with Room Database to build components for Android App.
 
