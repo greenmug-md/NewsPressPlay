@@ -98,7 +98,7 @@ Application lands on the Homepage which has a BottomNavigationView , containing 
 Video Player Component using Google's Opensource [Exoplayer Library](https://github.com/google/ExoPlayer).
  This Guide [Developer Guide for Exoplayer](https://exoplayer.dev/hello-world.html) helped in understanding and handling different media Types such as HLS, DASH, Smooth Streaming. It provides an alternative to Android’s MediaPlayer API for playing audio and video both locally and over the Internet
  
-<img src="(https://user-images.githubusercontent.com/34758872/132114902-54f58bde-061d-4ee4-91c8-a1383a13cf75.png" width="200">
+ <img src="https://user-images.githubusercontent.com/34758872/132114902-54f58bde-061d-4ee4-91c8-a1383a13cf75.png" width="200">
  
 Android Unit Testing for Network Module, View Models and Database
  
