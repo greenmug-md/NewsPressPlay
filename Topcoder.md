@@ -87,18 +87,18 @@ Application lands on the Homepage which has a BottomNavigationView , containing 
  2. Channels (Clicking on Channel will open Videos corresponding to that particular channel)
  3. Watch Later(Favourites and Bookmark).
  
- <img src="https://user-images.githubusercontent.com/34758872/130397297-fae79917-a7b2-4fbf-8648-c818f728497b.png" width="200">
+ ![alt text](https://user-images.githubusercontent.com/34758872/130397297-fae79917-a7b2-4fbf-8648-c818f728497b.png)
  
  Favourites and Bookmark data are stored in local db using Room Database.
  Lifecycle aware LiveData and ViewModels were used , so that it can update the View Layer when underlying Data changes.
  Network Calls were made with help of Kotlin Coroutines and RxJava.
  
- <img src="https://user-images.githubusercontent.com/34758872/130397310-7a346e74-9f63-4ecb-a554-f452088500ae.png" width="200">
+ ![alt text](https://user-images.githubusercontent.com/34758872/130397310-7a346e74-9f63-4ecb-a554-f452088500ae.png)
 
 Video Player Component using Google's Opensource [Exoplayer Library](https://github.com/google/ExoPlayer).
  This Guide [Developer Guide for Exoplayer](https://exoplayer.dev/hello-world.html) helped in understanding and handling different media Types such as HLS, DASH, Smooth Streaming. It provides an alternative to Android’s MediaPlayer API for playing audio and video both locally and over the Internet
  
- <img src="https://user-images.githubusercontent.com/34758872/132114902-54f58bde-061d-4ee4-91c8-a1383a13cf75.png" width="200">
+ ![alt text](https://user-images.githubusercontent.com/34758872/132114902-54f58bde-061d-4ee4-91c8-a1383a13cf75.png) 
  
 Android Unit Testing for Network Module, View Models and Database
  
