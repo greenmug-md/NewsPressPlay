@@ -13,8 +13,7 @@ Some of the Requirements for Edit etc was not covered due to time from my end.
 - Frontend: **Android using Kotlin**
   -  Material UI as Theme and Styling library
   -  Android Architecture using Model View ViewModel (Android Lifecycle aware component).
-  -  Room for Local Database
-  -  Coroutines with RxJava for Network Calls
+  -  Coroutines for Network Calls
  
 ## Run Application
 
